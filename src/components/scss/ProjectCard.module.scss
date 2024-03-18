@@ -1,0 +1,48 @@
+.card {
+	position: relative;
+	border-radius: 8px;
+	width: 400px;
+	height: 400px;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+	color: white;
+
+	&:before {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		border-radius: 8px;
+		background: linear-gradient(
+			0deg,
+			rgba(0, 0, 0, 0.7) 0%,
+			rgba(0, 0, 0, 0) 100%
+		);
+	}
+
+	&:hover {
+		.content {
+			padding: 16px;
+			height: 100px;
+			transition: all 0.5s ease-out;
+		}
+		&:before {
+			height: 100%;
+			transition: all 0.5s ease-out;
+		}
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+
+	.content {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 400px;
+		z-index: 10;
+	}
+}

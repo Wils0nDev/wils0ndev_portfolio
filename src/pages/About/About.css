@@ -1,0 +1,52 @@
+
+
+
+.card-about-texto {
+    background:  linear-gradient(60deg, #543ab7 0%, #00acc1 100%);
+}
+.card-about-texto:hover {
+    background:  linear-gradient(60deg, #00acc1  0%, #543ab7   100%);
+	transition-duration: 2s;
+    transition-property: background-color;
+}
+
+.img-about:hover {
+    transform: translateX(-3%);
+	transition-duration: 5s;
+    animation-name: move-x;
+}
+
+
+
+@keyframes move-x {
+	50% {
+		transform: translateX(var(--x1));
+	}
+	100% {
+		transform: translateX(var(--x2));
+	}
+}
+
+
+@media (max-width: 390px) {
+    .card-about-texto {
+      display: flex ;
+      flex-direction: column ;
+      width: 100%;
+    }
+
+    .card-corousel {
+        display: flex ;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+      }
+      
+    .img-about:hover {
+        transform: translateX(0);
+
+    }
+    
+
+   
+  }

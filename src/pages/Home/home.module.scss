@@ -1,0 +1,49 @@
+.texto {
+	cursor: pointer;
+	animation: starred 5s ease infinite;
+	display: inline-block;
+	&::after {
+		content: '';
+		position: absolute;
+		left: 5rem;
+		background-size: cover;
+		background-position: center;
+		transform: rotate(-40deg);
+		z-index: 20;
+	}
+	&:hover {
+		animation-play-state: paused;
+		&::after {
+			width: 10rem;
+			height: 12rem;
+			top: -10rem;
+			left: 10rem;
+			background-size: cover;
+			transform: rotate(0deg);
+			transition: all  ease;
+		}
+	}
+
+	@keyframes starred {
+		0% {
+			-webkit-transform: scale(1);
+			transform: scale(1);
+		}
+		5% {
+			-webkit-transform: scale(1.2);
+			transform: scale(1.2);
+		}
+		10% {
+			-webkit-transform: scale(1);
+			transform: scale(1);
+		}
+		15% {
+			-webkit-transform: scale(1.2);
+			transform: scale(1.2);
+		}
+		20% {
+			-webkit-transform: scale(1);
+			transform: scale(1);
+		}
+	}
+}
