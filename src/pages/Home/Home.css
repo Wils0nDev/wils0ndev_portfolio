@@ -20,9 +20,7 @@
 .img_home {
   box-shadow: -1px -9px 0px 4px #fb6832;
 }
-.btn-primary {
-  @apply flex items-center gap-2 px-6 py-3 mx-auto mt-6 font-semibold text-white bg-indigo-400 rounded-full md:mx-0;
-}
+
 @media (max-width: 768px) {
   .img_home {
     width: 50%;

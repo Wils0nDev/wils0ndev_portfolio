@@ -8,9 +8,9 @@ export const CarouselCard = () => {
     <Carousel className="gap-0">
       <div className="w-full">
         <Card
-          className={`flex flex-col items-center w-full h-full md:pl-0  md:pr-0 xl:pl-8 xl:pr-0 mt-0 bg-transparent shadow-none`}
+          className={`p-0 flex flex-col items-center w-full h-full md:pl-0  md:pr-0 xl:pl-8 xl:pr-0 mt-0 bg-transparent shadow-none`}
         >
-          <CardBody>
+          <CardBody className="p-0">
             <Typography variant="h1" color="white" className="mb-2">
               Como Profesional
             </Typography>
@@ -24,7 +24,7 @@ export const CarouselCard = () => {
             </h3>
             <Typography
               color="white"
-              className="mb-4 font-normal xl:text-base md:text-xs sm:text-xs sm:leading-4"
+              className="mb-4 font-normal xl:text-sm md:text-xs sm:text-xs sm:leading-4"
             >
               Desarrollador FullStack cuento con 8 años de experiencia en el
               desarrollo de aplicaciones web, he trabajado con tecnologías como
@@ -37,14 +37,14 @@ export const CarouselCard = () => {
 
             <Typography
               color="white"
-              className={`${style.card_texto_movil} mb-4 xl:text-base font-normal md:text-xs sm:text-xs sm:leading-4`}
+              className={`${style.card_texto_movil} mb-4 xl:text-sm font-normal md:text-xs sm:text-xs sm:leading-4`}
             >
               Actualmente he venido trabajando con la creación de aplicaciones
               basadas en Clean Architecture y principios SOLID.
             </Typography>
             <Typography
               color="white"
-              className={`${style.card_texto_movil} mb-4 xl:text-base font-normal md:text-xs sm:text-xs sm:leading-4`}
+              className={`${style.card_texto_movil} mb-4 xl:text-sm font-normal md:text-xs sm:text-xs sm:leading-4`}
             >
               Me considero muy autodidacta con habilidades probadas para
               colaborar efectivamente en equipos globales, tengo la capacidad de
@@ -57,13 +57,13 @@ export const CarouselCard = () => {
         <Card
           className={`flex flex-col items-center w-full h-full md:pl-0  md:pr-0 xl:pl-8 xl:pr-0 mt-0 bg-transparent shadow-none`}
         >
-          <CardBody>
+          <CardBody className='p-0'>
             <Typography variant="h1" color="white" className="mb-2">
               Como Persona
             </Typography>
             <Typography
               color="white"
-              className={`${style.card_texto_movil} mb-4 xl:text-base font-normal `}
+              className={`${style.card_texto_movil} mb-4 xl:text-sm font-normal `}
             >
               Me considero alguien centrado en mis valores, siendo el respeto y la humildad los valores mas fuertes que rescataría, tambien soy algo confiado lo que a veces me 
               a generado algunos incovenientes. <br/>

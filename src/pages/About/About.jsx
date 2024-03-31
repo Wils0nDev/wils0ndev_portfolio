@@ -2,6 +2,7 @@ import React from "react";
 import { IconsSocialHover } from "../../components/IconsSocialHover";
 import { CarouselCard } from "../../components/CarouselCard";
 import { Typography } from "@material-tailwind/react";
+import { Box } from '@mui/material';
 
 import styleIcon from "../../components/scss/icons_social_hover.module.scss";
 import "./About.css";
@@ -9,7 +10,7 @@ import { CarouselChild } from "../../components/CarouselChild";
 
 const About = () => {
   return (
-    <section className="flex flex-col justify-center border-b-2 border-gray-500 shadow-lg xl:p-32 section-about md:p-10 sm:p-10 shadow-indigo-500/30">
+    <section id="about" className="flex flex-col justify-center border-b-2 border-gray-500 shadow-lg xl:p-32 section-about md:p-10 sm:p-10 shadow-indigo-500/30">
       <Typography variant='h4' color='primary' className="mb-1 text-orange-200" >
 				Conoceme un poco más 🙂 
 			</Typography>
@@ -24,9 +25,13 @@ const About = () => {
           <div className="card-corousel">
           <CarouselCard />
           </div>
-          <div className="items-center ml-10">
+          <Box
+						sx={{ display: { xs: 'none', md: 'block' } }}
+						className={styleIcon.social + 'items-center ml-10'}
+					>
           <IconsSocialHover style={styleIcon}/>
-          </div>
+          </Box>
+         
         </div>
       </div>
     </section>
