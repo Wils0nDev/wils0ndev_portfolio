@@ -83,9 +83,9 @@ export const Nabvar = () => {
               </Link>
             </li>
           ))}
-          <button className="px-3 py-1 text-white bg-blue-500 rounded btn md:ml-8">
+          {/* <button className="px-3 py-1 text-white bg-blue-500 rounded btn md:ml-8">
             Get Started
-          </button>
+          </button> */}
         </ul>
       </div>
     </div>
