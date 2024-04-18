@@ -1,4 +1,3 @@
-import React from "react";
 import { IconsSocialHover } from "../../components/IconsSocialHover";
 import { CarouselCard } from "../../components/CarouselCard";
 import { Typography } from "@material-tailwind/react";

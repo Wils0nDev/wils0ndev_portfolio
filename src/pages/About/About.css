@@ -28,11 +28,11 @@
 }
 
 
-@media (max-width: 390px) {
+@media (min-width: 390px) {
+   
     .card-about-texto {
       display: flex ;
       flex-direction: column ;
-      width: 100%;
     }
 
     .card-corousel {
